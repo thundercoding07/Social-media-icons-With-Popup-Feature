@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+*,
+*::after,
+*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background: linear-gradient(to right, #616161, #9bc5c3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent ;
+    gap: 40px;
+}
+
+.wrapper .icons{
+   text-align: center;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+   position: relative;
+   z-index: 2;
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   object-position: center;
+   backdrop-filter: blur(5px);
+}
+
+.wrapper .icons span{
+   display: block;
+   height: 60px;
+   width: 60px;
+   background: transparent;
+   border-radius: 50%;
+   position: relative;
+   z-index: 2;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   color: #000;
+}
+
+.wrapper .icons span i{
+   line-height: 60px;
+   font-size: 26px;
+}
+
+.wrapper .icons .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icons:hover .tooltip{
+    top: -60px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.wrapper .icons:hover span{
+    color: #ffffff;
+}
+
+.wrapper .icons:hover span,
+.wrapper .icons:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip{
+    background: #3b5999;
+
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip{
+    background: #e1306c;
+}
+
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip{
+    background: #46c1f6;
+}
+
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip{
+    background: #CD201F;
+}
+
+
